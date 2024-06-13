@@ -7,27 +7,7 @@
     </head>
     <body>
         <h1>Welcome!</h1>
-        <button type="button">Brain Puzzles</button>
+        <a href="puzzles.html"><button type="button">Brain Puzzles</button></a>
         <button type="button">Scan-o-tron 3000&#8482;</button>
-
-        <script type="importmap">
-            {
-              "imports": {
-                "@google/generative-ai": "https://esm.run/@google/generative-ai"
-              }
-            }
-        </script>
-        <script type="module">
-            import { GoogleGenerativeAI } from "@google/generative-ai";
-            import apiKey from './config.js';
-      
-            // Fetch your API_KEY
-            const API_KEY = apiKey;
-      
-            // Access your API key (see "Set up your API key" above)
-            const genAI = new GoogleGenerativeAI(API_KEY);
-      
-            const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash"});
-        </script>
     </body>
 </html>

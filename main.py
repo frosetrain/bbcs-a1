@@ -42,7 +42,6 @@ def get_question():
         return
     return {"question": question, "options": options, "answer": answer, "explanation": explanation}
 
-
 @app.get("/")
 def api_question():
     return get_question()
