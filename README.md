@@ -2,9 +2,10 @@
 
 BuildingBloCS June Conference 2024
 
-Hello! This app specialises on helping people with Alzheimer's / dementia. Hope this satisfies the requirements of promoting sustainability, accessibility and inclusivity in Singapore &#128512;
+Hello! This app specialises on helping people with Alzheimer's / dementia. Hope this satisfies the requirements of promoting sustainability, accessibility and inclusivity in Singapore.
 
 ## Ideation
+
 Categorised by complexity
 
 1. Daily puzzles to exercise user's brain

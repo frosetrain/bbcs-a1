@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="puzzles.js"></script>
+        <title>Puzzles</title>
+    </head>
+    <body>
+        <p id="question-label">Press the button below to start!</p>
+        <button id="o1" onclick="selectAnswer(1)"></button>
+        <button id="o2" onclick="selectAnswer(2)"></button>
+        <button id="o3" onclick="selectAnswer(3)"></button>
+        <button id="o4" onclick="selectAnswer(4)"></button>
+        <br /><br />
+        <button onclick="getPuzzle()">Get new puzzle</button>
+        <p id="verdict"></p>
+        <p id="explanation"></p>
+    </body>
+</html>
