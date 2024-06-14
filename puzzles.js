@@ -6,6 +6,10 @@ async function getPuzzle() {
     document.getElementById("verdict").innerHTML = "";
     document.getElementById("explanation").innerHTML = "";
     document.getElementById("question-label").innerHTML = "Loading...";
+    document.getElementById("o1").innerHTML = "";
+    document.getElementById("o2").innerHTML = "";
+    document.getElementById("o3").innerHTML = "";
+    document.getElementById("o4").innerHTML = "";
     answered = false;
     response = await fetch("http://127.0.0.1:8000", {
         mode: "cors",
@@ -25,8 +29,13 @@ async function getPuzzle() {
 function selectAnswer(optionNum) {
     if (answered) return;
     console.log(optionNum, answerNum);
-    document.getElementById("verdict").innerHTML =
-        optionNum === answerNum ? "Correct!" : "Wrong";
+    correct = optionNum === answerNum;
+    verdict = document.getElementById("verdict");
+    verdict.innerHTML = correct ? "Correct!" : "Wrong";
+    verdict.style.color = correct ? "green" : "red";
+    document.getElementById(
+        "correctAns"
+    ).innerHTML = `Correct answer: ${answerNum}`;
     document.getElementById("explanation").innerHTML = explanation;
     answered = true;
 }
